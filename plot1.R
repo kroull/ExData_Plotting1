@@ -12,6 +12,5 @@ hpc <- read.csv.sql("household_power_consumption.txt",
 # summary(hpc) # No NA => Good!
 
 png("plot1.png", width=480, height=480)
-hist(hpc$Global_active_power, main="Global Active Power", col="red",
-     xlab="Global Active Power (kilowats)")
+hist(hpc$Global_active_power, main="Global Active Power", col="red", xlab="Global Active Power (kilowats)")
 dev.off()
